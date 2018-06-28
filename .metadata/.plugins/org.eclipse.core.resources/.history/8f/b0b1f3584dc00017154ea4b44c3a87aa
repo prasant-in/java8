@@ -1,0 +1,15 @@
+package com.yatish.tutorial.Lambda;
+
+public class J14_this_Reference_In_Lambda {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}
+
+interface M {
+	void m();
+}

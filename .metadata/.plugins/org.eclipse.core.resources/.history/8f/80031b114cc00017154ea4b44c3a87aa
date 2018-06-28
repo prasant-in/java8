@@ -1,0 +1,22 @@
+package com.yatish.tutorial.Lambda;
+
+public class J13_Lambda_Closures {
+
+	public static void main(String[] args) {
+		
+		String label = "outside scope variable";
+		
+		/*
+		 * We are accessing the variable 'label' which is present in the enclosing outer scope of the lambda expression. But if we try to modify the value of the 'label' within lambda expression, then
+		 * java 8 compiler will thrown an error saying "you cannot modify a final variable"
+		 */
+		L lll123 = () -> {System.out.println(label);};
+		lll123.m();
+
+	}
+
+}
+
+interface L {
+	void m();
+}

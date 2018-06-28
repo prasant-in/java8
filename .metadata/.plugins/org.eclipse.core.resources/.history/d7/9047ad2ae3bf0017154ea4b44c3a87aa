@@ -1,0 +1,14 @@
+package com.yatish.tutorial.Lambda;
+
+public class J13_Lambda_Closures {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+interface A {
+	
+}

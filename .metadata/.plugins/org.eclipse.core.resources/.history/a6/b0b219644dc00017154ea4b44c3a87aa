@@ -1,0 +1,18 @@
+package com.yatish.tutorial.Lambda;
+
+public class J14_this_Reference_In_Lambda {
+
+	public static void main(String[] args) {
+		
+		String label = "outside scope variable";
+		
+		M mmm123 = () -> {System.out.println(label);};
+		mmm123.m();
+
+	}
+
+}
+
+interface M {
+	void m();
+}

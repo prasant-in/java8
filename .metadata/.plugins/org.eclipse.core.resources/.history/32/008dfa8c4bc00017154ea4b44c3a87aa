@@ -1,0 +1,17 @@
+package com.yatish.tutorial.Lambda;
+
+public class J13_Lambda_Closures {
+
+	public static void main(String[] args) {
+		
+		String label = "outside scope variable";
+		
+		L lll123 = () -> {System.out.println(label)};
+
+	}
+
+}
+
+interface L {
+	void m();
+}

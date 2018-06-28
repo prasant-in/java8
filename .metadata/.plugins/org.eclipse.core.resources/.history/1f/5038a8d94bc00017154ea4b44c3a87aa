@@ -1,0 +1,23 @@
+package com.yatish.tutorial.Lambda;
+
+public class J13_Lambda_Closures {
+
+	String l = "";
+	
+	public static void main(String[] args) {
+		
+		String label = "outside scope variable";
+		
+		/*
+		 * We are accessing the variable 'label' which is present in the enclosing scope of the 
+		 */
+		L lll123 = () -> {System.out.println(label);};
+		lll123.m();
+
+	}
+
+}
+
+interface L {
+	void m();
+}

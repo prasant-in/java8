@@ -1,0 +1,24 @@
+package com.yatish.tutorial.Lambda;
+
+public class J14_this_Reference_In_Lambda {
+
+	String label = "outside scope variable";
+	
+	public void m1() {
+		/*
+		 * In Lambda expression. 'this' will refer to the enclosing outer scope object. In this case, this will refer to the current 'J14_this_Reference_In_Lambda' object.
+		 */
+		M mmm123 = () -> {System.out.println(this.label);};
+		mmm123.m();
+	}
+	
+	public static void main(String[] args) {
+		J14_this_Reference_In_Lambda obj = new J14_this_Reference_In_Lambda();
+		obj.m1();
+	}
+
+}
+
+interface M {
+	void m();
+}
